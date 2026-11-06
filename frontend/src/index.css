@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ==================================================
+     OFFICIAL BRAND COLOUR PALETTE: MIDNIGHT LIGHTHOUSE
+     ================================================== */
+
+  /* Core */
+  --color-background: #0C1430;
+  --color-text-primary: #E8EEFF;
+  --color-text-secondary: #9FB0D4;
+  --color-card: #0A0E1A;
+  --color-border: #AAB6D0;
+  --color-input: #050814;
+  --color-accent: #FFD98A;
+  --color-accent-hover: #FFE7AB;
+  --color-button-text: #14182A;
+
+  /* Atmospheric */
+  --color-sky-top: #16224A;
+  --color-sky-mid: #2E4272;
+  --color-sky-horizon: #7A96C0;
+  --color-stars: #C8D4F0;
+  --color-bright-stars: #E8EEFF;
+  --color-sea-horizon: #5A7AA8;
+  --color-sea-deep: #22325E;
+  --color-surf: #A8B8D8;
+
+  /* Decorative */
+  --color-far-headland: #2A3A66;
+  --color-clouds: #3A4C7A;
+  --color-cliff-dark: #0A0E1A;
+  --color-cliff-mid: #141A2A;
+  --color-cliff-rim: #1E2638;
+  --color-grass: #16242A;
+  --color-tower-light: #AAB6D0;
+  --color-tower-shade: #6A7898;
+  --color-tower-band: #7A3040;
+  --color-tower-band-dark: #5A2232;
+
+  /* Lighting */
+  --color-beam: #FFF0B8;
+  --color-lamp-core: #FFFBE8;
+  --color-window-glow: #FFB860;
+  --color-window-deep: #E89048;
+
+  /* Glassmorphism helpers */
+  --glass-card: rgba(10, 14, 26, 0.78);
+  --glass-drawer: rgba(10, 14, 26, 0.88);
+  --glass-border: rgba(170, 182, 208, 0.22);
+  --glass-subtle-border: rgba(170, 182, 208, 0.14);
+}
+
+/* Base body background and typography */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom dark scrollbar matching Midnight Lighthouse */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2638;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2E4272;
+}
+
+/* Restrained technical canvas grid pattern with atmospheric depth */
+.tech-grid-navy {
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(170, 182, 208, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(170, 182, 208, 0.04) 1px, transparent 1px);
+}
+
+/* Subtle circuit atmospheric overlay */
+.circuit-overlay-navy {
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(30, 38, 56, 0.4) 0, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(12, 20, 48, 0.6) 0, transparent 50%);
+}
+
+/* SVG animated dash flow for workflow conduits */
+@keyframes dash-flow {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-dash-flow {
+  animation: dash-flow 2.2s linear infinite;
+}

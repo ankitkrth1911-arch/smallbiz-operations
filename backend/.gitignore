@@ -1,0 +1,27 @@
+# Backend Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Database & SQLite files
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+.pytest_cache/
+*.log
+
