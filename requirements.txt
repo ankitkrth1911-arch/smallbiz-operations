@@ -1,0 +1,14 @@
+# SmallBiz AI Operations Room - Python Dependencies
+# FastAPI Web Framework & Production ASGI Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Database & ORM (Neon PostgreSQL / Synchronous SQLAlchemy 2.0 with Psycopg 3)
+sqlalchemy>=2.0.36
+psycopg[binary]>=3.2.0
+
+# Schema Validation, Configuration & Environment Variables
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.1
+email-validator>=2.0.0
